@@ -15,7 +15,7 @@ public class Ejercicio_extra_3_arrays {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        char []tablaAux = new char[9];
+        char []tablaAux = new char[10];
         
         int[] lista1 = {1,2,3,5};
         
@@ -34,6 +34,7 @@ public class Ejercicio_extra_3_arrays {
         for (int i = 0; i < tablaAux.length; i++) {
             System.out.println("Posición "+i+":"+tablaAux[i]);
         }
+        
         
         
         //paso2: compruebo si los elementos de la lista 2 se ecuentran marcados en la tabla auxiliar;
