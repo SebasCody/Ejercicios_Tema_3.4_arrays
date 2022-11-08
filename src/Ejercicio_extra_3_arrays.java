@@ -14,37 +14,37 @@ public class Ejercicio_extra_3_arrays {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
-        char []tablaAux = new char[10];
-        
-        int[] lista1 = {1,2,3,5};
-        
-        int[] lista2 = {1,9,6,7};
-        //int[] lista2 = {1,2,3,5};
-        
+
+        //DEFINIMOS DOS ARRAYS EN EL MISMO CÓDIGO Y LA TABLA AUXILIAR
+        char[] tablaAux = new char[10];
+        int[] lista1 = {1, 2, 3, 5};
+        //int[] lista2 = {1,9,5,2};
+        int[] lista2 = {1, 3, 5, 2};
+
         boolean sonIguales = true;
-        
+
         //paso1: relleno la tabla auxiliar con los numeros de lista1
-        
-        for (int i=0; i< lista1.length;i++ ){
+        for (int i = 0; i < lista1.length; i++) {
             int num = lista1[i];
-            tablaAux[num]='x';    
+            tablaAux[num] = 'x';
         }
         //imprimo la tabla por gusto
         for (int i = 0; i < tablaAux.length; i++) {
-            System.out.println("Posición "+i+":"+tablaAux[i]);
+            System.out.println("Posición " + i + ":" + tablaAux[i]);
         }
-        
-        
-        
+
         //paso2: compruebo si los elementos de la lista 2 se ecuentran marcados en la tabla auxiliar;
-        
         for (int i = 0; i < lista2.length; i++) {
-             int num=lista2[i];
-             if (tablaAux[num]!='x'){
-                 sonIguales = false;
-             }
+            int num = lista2[i];
+            if (tablaAux[num] != 'x') {
+                sonIguales = false;
+                System.out.println("No son iguales");
+            }
+
+        }
+        if (sonIguales == true) {
+            System.out.println("Son Iguales");
         }
     }
-    
+
 }
