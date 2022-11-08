@@ -7,7 +7,7 @@
  *
  * @author sebastian.peralta
  */
-public class Ejercicio_05_arrays {
+public class Ejercicio_13_arrays {
 
     /**
      * @param args the command line arguments
@@ -15,6 +15,8 @@ public class Ejercicio_05_arrays {
     public static void main(String[] args) {
         // TODO code application logic here
         
+        String[] nombresArray = {"Juan", "Celia", "Alfredo", "Maria", "Pedro"};
+        String[][] notasArray = new String[6][4];
         
         
     }
